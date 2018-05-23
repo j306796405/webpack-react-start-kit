@@ -1,0 +1,232 @@
+.page-content {
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none
+  }
+}
+
+.pay-method-module {
+  .content-block {
+    margin: 10px 0;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: #298beb;
+  }
+
+  .micon-pay-aqk {
+    width: 30px;
+    height: 30px;
+    background-size: 24px auto;
+    background-position: 50%;
+  }
+
+  .open-btn {
+    width: 76px;
+    height: 25px;
+  }
+
+  &-gap {
+    margin-bottom: 10px;
+  }
+
+  &-card {
+    .hd {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+      overflow: hidden;
+      margin: 15px 15px 6px;
+      .tit {
+        color: #666;
+      }
+      .hd-after {
+
+      }
+    }
+    .item-title {
+      .name {
+        font-size: 14px;
+      }
+      .desc {
+        font-size: 12px;
+        color: #666;
+      }
+    }
+    .item-content {
+      &.inactive {
+        * {
+          opacity: .55;
+        }
+      }
+
+      &.card-status-item-content {
+        min-height: 30px;
+        padding: 4px 15px;
+        font-size: 13px;
+        color: #333;
+      }
+    }
+  }
+
+  &-no-card {
+
+    .card-desc {
+      position: relative;
+      overflow: hidden;
+      margin: 10px 15px 15px;
+      padding: 14px 15px 13px 45px;
+      background: #949fb6 data-uri("../img/micon-safe-card-desc.png") no-repeat 12px 18px;
+      background-size: 26px auto;
+      border-radius: 5px 5px 0 0;
+      color: #fff;
+
+      font-size: 12px;
+      .tit {
+        font-size: 15px;
+        margin-top: 2px;
+        margin-bottom: 7px;
+      }
+      .aqk-link {
+        float: right;
+        margin-top: 5px;
+        padding-right: 15px;
+        background: data-uri("../img/into-desc-arrow.png") no-repeat right center;
+        background-size: 7px auto;
+      }
+    }
+    .card-support {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px 15px 4px;
+      font-size: 14px;
+      color: #999;
+
+      &-after {
+        display: flex;
+        align-items: center;
+
+        .micon-info-gray {
+          margin-right: 1px;
+        }
+      }
+
+      .supportcard-link {
+        float: right;
+        color: #298BEB;
+      }
+      .setcard-desc {
+
+        .micon-support-question {
+          margin-left: 3px;
+          vertical-align: -2px;
+        }
+      }
+      .change-card {
+        color: #298BEB;
+      }
+    }
+    .card-support + ul {
+      margin-top: 0;
+    }
+    ul {
+      margin-top: 10px;
+    }
+    .item-content {
+      &, & .item-inner {
+        min-height: 52px;
+      }
+      .desc {
+        font-size: 12px;
+        color: #8F8F8F;
+      }
+    }
+  }
+}
+
+.select-safe-card-method-module {
+  .hd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    overflow: hidden;
+    margin: 15px 15px 6px;
+    .tit {
+      color: #666;
+    }
+    .hd-after {
+
+    }
+  }
+  .list-block {
+    padding-left: 0;
+    .title {
+      position: relative;
+      color: #FF7A04;
+      font-size: 17px;
+      height: 44px;
+      line-height: 44px;
+      background-color: #FFF;
+      padding-left: 15px;
+      &:before {
+        //.border-top();
+      }
+    }
+    .item-content {
+      padding-left: 15px;
+
+      &.inactive {
+        .item-media,
+        .item-title {
+          opacity: .55;
+        }
+      }
+
+      .open-account {
+        position: absolute;
+        right: 15px;
+        z-index: 1;
+        width: 84px;
+        height: 25px;
+        line-height: 25px;
+      }
+      .tit {
+        em {
+          font-size: 12px;
+          font-style: normal;
+        }
+      }
+      .desc {
+        font-size: 12px;
+        color: #666;
+        white-space: normal;
+        margin-top: 2px;
+      }
+    }
+    label.label-radio {
+      input[type=radio] {
+        & ~ .item-inner {
+          background: data-uri("../img/icon-unchecked.png") no-repeat 95% center;
+          background-size: 16px 16px;
+          background-position: calc(~"100% - 15px") center;
+        }
+        &:checked ~ .item-inner {
+          background-image: data-uri("../img/icon-checked.png");
+        }
+      }
+      &.disabled input[type=radio] ~ .item-inner {
+        background-image: none;
+      }
+
+    }
+  }
+}
