@@ -1,0 +1,2 @@
+* babel-preset-env
+babel preset将基于你的实际浏览器及运行环境，自动的确定babel插件及polyfills，转译ES2015及此版本以上的语言
